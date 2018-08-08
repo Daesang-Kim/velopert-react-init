@@ -1,0 +1,8 @@
+2018.08.08
+- node.js 설치 (사이트에서 다운로드 해서 설치)
+- yarn 설치 (사이트에서 다운로드 해서 설치)
+- create-react-app 설치 (yarn 통해서 설치)
+- React 신규 프로젝트 생성 (create-react-app 사용)
+- 신규 프로젝트 폴더로 가서 yarn start
+- style 적용 테스트 진행
+- className 사용, style 사용
