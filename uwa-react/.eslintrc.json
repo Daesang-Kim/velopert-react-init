@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "plugins": ["react", "jsx-a11y", "import"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "linebreak-style": "off",
+    "no-console": "off",
+    "global-require": "off",
+    "no-underscore-dangle": "off",
+    "arrow-parens": ["error", "as-needed"]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

@@ -1,0 +1,4 @@
+config/*
+scripts/*
+prettier-react/*
+src/stories/*

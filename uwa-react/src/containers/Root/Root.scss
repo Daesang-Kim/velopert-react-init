@@ -1,0 +1,120 @@
+$font-color: #4c4c4c;
+$border-color: #c9c9c9;
+$point-color: #ff9832;
+$menu-point-color: #424242;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "NotoSans";
+  font-size:12px;
+  line-height: 2em;
+  box-sizing: border-box;
+  color: $font-color;
+}
+
+a {
+  color: $font-color;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+
+  &.btn {
+    height: 30px;
+    line-height: 29px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #aaa;
+    padding: 0 15px;
+  }
+
+  &.icon-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    padding-bottom: 2px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #aaa;
+  }
+}
+
+.input {
+  height: 30px;
+  line-height: 29px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #aaa;
+  padding: 0 8px;
+}
+
+.NavigationBar {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  float: left;
+  border-bottom: 1px solid $border-color;
+
+  .navigation-bar-title{
+    a{
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 16px;
+      font-weight: 600;
+  
+      &:hover{
+        color:$point-color;
+      }
+  
+      &.active{
+        color:$point-color;
+      }
+    }
+  }
+}
+
+.media-side-bar{
+  width: 250px;
+  height: calc(100vh - 50px) ;
+  border-right: 1px solid $border-color;
+  float: left;
+}
+
+.media-side-link{
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid $border-color;
+
+  button {
+    width: calc(80% / 3);
+    height: 64px;
+    border: none;
+    color: #E0E0E0;
+    background-color: rgb(255, 255, 255);
+
+    &:first-child {
+      margin-left: 10%;
+    }
+
+    &:hover{
+      color: $menu-point-color;
+    }
+    &.active{
+      color: $menu-point-color;
+    }
+    svg{
+      font-size: 25px;
+    }
+  }
+}
+
+.media-container{
+  float: left;
+}
