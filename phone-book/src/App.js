@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PhoneForm from './components/PhoneForm'
 import PhoneInfoList from './components/PhoneInfoList';
+import Freesample from './components/Freesample';
 import './App.css';
 
 class App extends Component {
@@ -74,6 +75,22 @@ class App extends Component {
         </p>
         <hr />
         <PhoneInfoList data={filteredList} onRemove={this.handleRemove} onUpdate={this.handleUpdate}/>
+        <div>
+          <input type="image" src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" onfocus='this.blur()'></input> 
+          <button type="button" style={{width:'150px', height:'150px', color:'red', fill:'green'}}>
+            <div>
+              버튼이다
+              <Freesample/>
+            </div>
+          </button>
+          <button type="button" style={{width:'100px', height:'100px', color:'blue', fill:'black'}}>
+            <div>
+              이것도
+              <Freesample/>
+            </div>
+          </button>
+        </div>
+        
       </div>
     );
   }
